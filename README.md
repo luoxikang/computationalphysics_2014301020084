@@ -1,10 +1,9 @@
-﻿# 计算物理
+﻿# HOMEWORK LIST
 
 
 
-1. [作业][1]
-2. [作业2][2]
+- [x] [Exercise_01:Draw your name with python.](https://www.baidu.com)
+- [ ] [Exercise_02](https://www.baidu.com)
+- [ ] [Exercisi_03](https://www.baidu.com)
 
 
-  [1]: https://www.baidu.com
-  [2]: https://www.vjjb.cn
