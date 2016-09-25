@@ -15,6 +15,18 @@ the macroscopic behavior of the system is not obvious.
 N = 27? Does the system appear to show a direction of time? Choose various values of N
 that are multiples of 3 up to N = 270. Is the direction of time better defined for larger N ?
 
+A: As time lapsing, particle move continuously because of Lennard-Jones potential.n1, n2, n3 also change at different time.
+The system appera to show a direction of time.When N=270,the macroscopic behavior of the system is more obvious.The direction
+of time is better defined.
+
+(c) The time shown in the plots is in terms of σ(m/ǫ)^1/2^  , where σ and ǫ are the length and energy
+parameters of the Lennard-Jones potential in (1.1) and m is the mass of a particle. Verify
+that this combination has units of time. For argon σ = 3.4 × 10 −10 m, ǫ = 1.65 × 10 −21 J,
+and m = 6.69 × 10^−26^kg. What is the value of σ(m/ǫ)^1/2^ for argon? How much real time has
+elapsed if the program shows that t = 100?
+
 A:
+
+
 
 
