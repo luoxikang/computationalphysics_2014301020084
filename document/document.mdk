@@ -42,12 +42,46 @@ divided between the three regions. Run the video both forward and backward. Can 
 by just looking at the video which direction is forward? Repeat for increasing values of N .
 Does your conclusion about the direction of time become more certain for larger N ?
 
-A:It can be telled that when the side parts' particles become more is forward.
+A:It can be told that when the side parts' particles become more,the direcction is forward.
 
 Yes ,when N is larger, the direction of time become more certain.
 
- 
+(e) Repeat part (d) but start the video after the particles are distributed equally among the three
+regions, say at t = 20 as in Figure 1.2. Is the direction of time obvious now? Repeat for various
+values of N .
+
+A: No,at t = 20,the system's state seems unchanged.It reach a equilibrium.
+
+#Problem 1.2. Particles in a box
+
+(a) Before you run the program describe what you think will be the qualitative behavior of n(t),
+the time-dependence of the number of particles on the left side of the box.
+
+A: The number will decrease and finally fluctuate around a certain number. 
 
 
+(b) Run the program and describe the behavior of n(t) for various values of N . Does the system
+approach equilibrium? How would you characterize equilibrium? In what sense is equilibrium
+better defined as N becomes larger? Does your definition of equilibrium depend on how the
+particles were initially distributed between the two halves of the box?
 
+A:When N is around a number and not decrease, it reach a equilibrium.
+When N becomes larger, finally the relative fluctuation of N is smaller.This indicate that
+the equilibrium is better defined.Particles' initial distribution will not influence the equilibrium.
 
+(c) When the system is in equilibrium, does the number of particles on the left-hand side remain
+a constant? If not, how would you describe the nature of equilibrium?
+
+A: No,the number of particles just fluctuate around a constant.The equilibrium is a dynamic equilibrium.
+
+(d) If N & 32, does the system return to its initial state during the time you have patience to
+watch the system?
+
+A: No, it will not return to its initial state.
+
+(e) How does n, the mean number of particles on the left-hand side, depend on N after the system
+has reached equilibrium? For simplicity, the program computes various averages from the time
+t = 0. Why would such a calculation not yield the correct equilibrium average values? Use
+the Zero Averages button to reset the averages.
+
+A:
