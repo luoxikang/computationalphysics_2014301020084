@@ -1,19 +1,20 @@
-Title         : Welcome
-Author        : You
-Logo          : True
+Title       :      STP Homework Chapter 1
+   
+Author      : Shangshu Lee   SN:2014301020084
+Logo         : True
 
 [TITLE]
 
-# Madoko 
+# Problem 1.1. Approach to equilibrium
+(a) Does the system appear to show a direction of time for N=6?
 
-Madoko is a fast markdown processor for writing professional articles
-with a focus on simplicity and plain text readability.
+A: For N=6, the direction of time is not apparent.Because N is too small,
+the macroscopic behavior of the system is not obvious.
 
-* Read the [reference manual].
-* Explore the upper-right toolbox menu to discover how Markdown works. 
-* `Alt-Q` reformats the current paragraph.
+(b) What is the nature of the time dependence of n1 , n2 , and n3 as a function of the time t for
+N = 27? Does the system appear to show a direction of time? Choose various values of N
+that are multiples of 3 up to N = 270. Is the direction of time better defined for larger N ?
 
-Enjoy!
+A:
 
-[reference manual]: http://research.microsoft.com/en-us/um/people/daan/madoko/doc/reference.html  "Madoko reference manual"
 
