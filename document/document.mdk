@@ -6,7 +6,7 @@ Logo         : True
 [TITLE]
 
 # Problem 1.1. Approach to equilibrium
-(a) Does the system appear to show a direction of time for N=6?
+(a) Does the system appear to show a direction of time for N=6? 
 
 A: For N=6, the direction of time is not apparent.Because N is too small,
 the macroscopic behavior of the system is not obvious.
@@ -52,6 +52,13 @@ values of N .
 
 A: No,at t = 20,the system's state seems unchanged.It reach a equilibrium.
 
+(g) Program ApproachToEquilibriumTwoPartitions initially divides the box into two partitions
+rather than three. Run the program and verify that the simulation shows similar qualitative
+behavior. Explain the use of toroidal boundary conditions.
+
+A:Toroidal boundary conditions ensure the forces that particle suffer at any position are the same
+when system approach a equilibrium.
+
 #Problem 1.2. Particles in a box
 
 (a) Before you run the program describe what you think will be the qualitative behavior of n(t),
@@ -79,9 +86,61 @@ watch the system?
 
 A: No, it will not return to its initial state.
 
-(e) How does n, the mean number of particles on the left-hand side, depend on N after the system
+(e) How does $\bar n$, the mean number of particles on the left-hand side, depend on N after the system
 has reached equilibrium? For simplicity, the program computes various averages from the time
 t = 0. Why would such a calculation not yield the correct equilibrium average values? Use
 the Zero Averages button to reset the averages.
 
+A: $\bar n$ will approach a half of N . If from time t = 0 to compute the
+average, the $\bar n$ will be larger a little. Because most time the system hasn't approached a equilibrium.
+So the values is not correct.By using the Zero Averages button  the value will more clost to a half of N.
+
+(f) Define the quantity $\sigma$ by the relation
+  $\sigma^2=\overline{(n-\bar n)^2}$
+What does $\sigma$ measure? What would be its value if n were constant? How does σ depend on
+N? How does the ratio σ/n depend on N? We say that σ is a measure of the fluctuations of
+n about its mean, and σ/n is a measure of the relative fluctuations of n. 
+
+A:$\sigma$ measure the degree of n fluctuating along the average.When N is larger, the $\sigma$ will be larger.
+But $\sigma/n$ will be smaller.
+
+#Problem 1.3. Counting microstates
+
+(a) Calculate the number of possible microstates for each macrostate n for N = 8 particles. What
+is the probability that n = 8? What is the probability that n = 4? It is possible to count the
+number of microstates for each n by hand if you have enough patience, but because there are a
+total of 28 = 256 microstates, this counting would be very tedious. An alternative is to obtain
+an expression for the number of ways that n particles out of N can be in the left half of the
+box. Motivate such an expression by enumerating the possible microstates for smaller values
+of N until you see a pattern.
+
+A:Probability p(n=8)=1/256, probability p(n=4)=70/256=35/128
+
+(b) The macrostate with n = N/2 is much more probable than the macrostate with n = N.
+Why?
+
+A:Because macrostate with n = N/2 contains more basic events, while n = N only contains one.
+
+#Problem 1.4. Different phases
+
+(a) Program LJ2DMD simulates an isolated system of N particles interacting via the Lennard-Jones
+potential. Choose N = 144 and L = 18 so that the density ρ = N/L2 ≈ 0.44. The initial
+positions are chosen at random except that no two particles are allowed to be closer than the
+length σ. Run the simulation and satisfy yourself that this choice of density and resultant
+total energy corresponds to a gas. What are your criteria?
+
+A:First choose N=64 and L=18 so that ρ = N/L2 ≈ 0.19.Then when T>0.8, the system look like gas.
+
+(b) Slowly lower the total energy of the system. (The total energy is lowered by rescaling the
+velocities of the particles.) If you are patient, you will be able to observe “liquid-like” regions.
+How are they different from “gas-like” regions?
+
+A:In "liquid-like" regions, particles assemble as a wodge,then move with the whole wodge.
+
+(c) If you decrease the total energy further, you will observe the system in a state roughly corresponding to a solid. What are your criteria for a solid? Explain why the solid that we obtain
+in this way will not be a perfect crystalline solid.
+
 A:
+
+
+
