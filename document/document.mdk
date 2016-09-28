@@ -33,7 +33,7 @@ elapsed if the program shows that t = 100?
 
 compute for argon:
 
-σ(m/ǫ)^1/2^=6.8$\times$10^-15^ s   real time is 6.8$\times$10^-13^ s
+σ(m/ǫ)^1/2^=2.16$\times$10^-12^ s   real time is 2.16$\times$10^-10^ s
  
 
 (d) To better understand the direction of time make a video 8 of the motion of the positions of 270
@@ -84,7 +84,7 @@ A: No,the number of particles just fluctuate around a constant.The equilibrium i
 (d) If N & 32, does the system return to its initial state during the time you have patience to
 watch the system?
 
-A: No, it will not return to it's initial state.
+A: No, it will not return to its initial state.
 
 (e) How does $\bar n$, the mean number of particles on the left-hand side, depend on N after the system
 has reached equilibrium? For simplicity, the program computes various averages from the time
