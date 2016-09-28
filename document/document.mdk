@@ -27,9 +27,9 @@ elapsed if the program shows that t = 100?
 
  A: σ(m/ǫ)^1/2^ unit compute: 
   
-~ Equation 
- M*\sqrt{\frac{KG}{KG*M*S^{-2}*M}}=S
-~
+
+ $M*\sqrt{\frac{KG}{KG*M*S^{-2}*M}}=S$
+
 
 compute for argon:
 
@@ -140,7 +140,195 @@ A:In "liquid-like" regions, particles assemble as a wodge,then move with the who
 (c) If you decrease the total energy further, you will observe the system in a state roughly corresponding to a solid. What are your criteria for a solid? Explain why the solid that we obtain
 in this way will not be a perfect crystalline solid.
 
-A:
+A: when the particles become nearly unmoving the system look like a solid.
+We obtain in this way will not be a perfect crystalline solid because there are other force or potential
+except Lennard-Jones potential in crystal.
+
+(d) Describe the motion of the individual particles in the gas, liquid, and solid phases.
+
+A: In gas the motion of individual particles is very random they can go anywhere they want.
+In liquid, particles always get together, say that every particle's adjacent particles are nearly same.They move together.
+In solid particles hardly move, they just vibrate at a position.
+
+(e) Conjecture why a system of particles interacting via the Lennard-Jones potential in (1.1) can
+exist in different phases. Is it necessary for the potential to have an attractive part for the
+system to have a liquid phase? Is the attractive part necessary for there to be a solid phase?
+Describe a simulation that would help you answer this question.
+
+A:I think it is necessary for the potential to have an attractive part for the system to have
+a liquid or solid phase.We can do a simulation that particles interact via a potential that don't
+have an attractive part and see when energy is low enough, the system if have a liquid(solid) phase or not.
+
+#Problem 1.5. Nature of temperature
+
+(a) Summarize what you know about temperature. What reasons do you have for thinking that
+it has something to do with energy?
+
+A:Temperature can be say a performance of a kind of energy.When two object with different temperature
+touch each self, they finally will reach the same temperature, this is the characteristic of temperature.
+ Because it can pass and transform like energy.
+
+(b) If you add energy to a pot of boiling water, does the temperature of the water change?
+
+A:No.
+
+(c) Discuss what happens to the temperature of a hot cup of coffee. What happens, if anything,
+to the temperature of its surroundings?
+
+A:The temperature of the hot cup of coffee and surroundings will approach each other and  be the same finally.
+
+#Problem 1.6.Identification of  the temperature
+
+(a) Consider two systems of particles A and B which interact via the Lennard-Jones potential in
+(1.1). Use Program LJThermalEquilibrium. Both systems are in a square box with linear
+dimension L = 12. In this case toroidal boundary conditions are not used and the particles
+also interact with fixed particles (with infinite mass) that make up the walls and the partition
+between them. Initially, the two systems are isolated from each other and from their surroundings. We take N~A~ = 81, ǫ~AA~ = 1.0, σ~~ = 1.0, N~B~ = 64, ǫ~BB~ = 1.5, and σ~BB~ = 1.2. Run the
+simulation and monitor the kinetic energy and potential energy until each system appears to
+reach equilibrium. What is the mean potential and kinetic energy of each system? Is the total
+energy of each system fixed (to within numerical error)
+
+A: For A, mean potential and kinetic energy are -3.02 and 0.09.For B, they separately are -4.40 and 0.14.
+Total energy of each system fixed.
+
+(b) Remove the barrier and let the particles in the two systems interact with one another.14 We
+choose ǫ~AB~ = 1.25 and σ~AB~ = 1.1. What quantity is exchanged between the two systems?
+(The volume of each system is fixed.)
+
+A:Particle's kinetic energy is exchanged.
+
+(c) After equilibrium has been established compare the average kinetic and potential energies of
+each system to their values before the two systems came into contact.
+
+A: System A's potential energy's absolute value decreased and system B's potential energy's absolute
+
+value increased.Both systems' kinetic energy is increased.
+
+(d) We seek a quantity that is the same in both systems after equilibrium has been established. Are
+the average kinetic and potential energies the same? If not, think about what would happen
+if you doubled the number of particles and the area of each system. Would the temperature
+change? Does it make more sense to compare the average kinetic and potential energies or the
+average kinetic and potential energies per particle? What quantity becomes the same once the
+two systems are in equilibrium? Do any other quantities become approximately equal? What
+can you conclude about the possible identification of the temperature in this system?
+
+A: The average kinetic energies are the same, but potential energies is not.
+The temperature wouldn't change.It is none of sense to compare the average kinetic and potential energies or the
+average kinetic and potential energies per particle.Average kinetic energy of particles.
+Average kinetic energy of particles is the possible identification of the temperature in this system.
+
+#Problem 1.7. Thermometers
+
+(a) Describe some of the simple thermometers with which you are familiar.
+
+A: Mercury thermometer, resistance thermometer and thermocouple thermometer etc.
+
+(b) On what physical principles do these thermometers operate?
+
+A:These thermometers all depend on some quantity that change with temperature
+like volume, resistance and voltage etc.
+
+(c) What requirements must a thermometer have to be useful?
+
+A:The thermometer's quantity must be one-to-one with a temperature value and it must easy to be read.
+
+#Problem 1.8. The demon and the ideal gas
+
+(a) Run the simulation using the default parameters N = 40, E = 40, and d = 3. Does the
+mean energy of the demon approach a well-defined value after a sufficient number of energy
+exchanges with the system? One Monte Carlo step per particle (mcs) is equivalent to N trial
+changes.
+
+A:In these condition, the mean energy of the demon approach a value=0.655.
+
+(b) What is $\overline{E_d}$, the mean energy of the demon, and E, the mean energy of the system? Compare
+the values of Ed and E/N.
+
+A:$\overline{E_d}$ is the energy that the gas give the demon,and $\bar E$ is the rest.
+$\bar E/N$ is approximately 1.5 times the $\overline{E_d}$.
+
+(c) Fix N = 40 and double the total energy of the system. (Remember that Ed = 0 initially.)
+Compare the values of $\overline{E_d}$ and $\bar E/N$. How does their ratio change? Consider other values of
+N ≥ 40 and E and determine the relation between $\overline{E_d}$ and $\bar E/N$.
+
+A:No matter how we change N and E, the ratio of $\bar E/N$ and $\overline{E_d}$ remain 1.5.
+
+(d) You probably learned in high school physics or chemistry that the mean energy of an ideal gas
+in three dimensions is equal to 3/2NkT , where T is the temperature of the gas, N is the number
+of particles, and k is a constant. Use this relation to determine the temperature of the ideal
+gas in parts (b) and (c). Our choice of dimensionless variables implies that we have chosen
+units such that k = 1. Is Ed proportional to the temperature of the gas?
+
+A:Yes, $\overline{E_d}$ is proportional to the temperature of the gas.
+
+(e) Suppose that the energy momentum relation of the particles is not ǫ = p2/2m, but is ǫ = cp,
+where c is a constant (which we take to be 1). Consider various values of N and E as you did
+in part (c). Is the dependence of $\overline{E_d}$ on $\bar E/N$ the same as you found in part (d)? We will find
+(see Problem 4.30) that Ed is still proportional to the temperature.
+
+A:No, it will change.
+
+(h) Discuss why the demon is an ideal thermometer.
+
+A:It can interact with the system and get the mean energy by equilibrium.Then it can give the correct temperature of the system.Thus it can
+be an ideal thermometer.
+
+#Problem 1.10. Independence of initial conditions
+Show that if the number of particles on the left-hand side of the box at t = 0 is equal to n(0)
+rather than N, the solution of (1.7) is
+$\bar n(t) = \frac{N}{2}-\frac{N}{2}[1-\frac{2n(0)}{N}]e^{-2t/N}$
+
+
+A: via (1.7) integrate:
+~ Equation { #eq-euler }
+\int_{\bar n(0)}^{\bar n}\frac{1}{1-\frac{2\bar n}{N}}d\bar n=\int_{0}^{t}dt
+~
+
+compute it we have:
+~ Equation { #eq-euler }
+1-\frac{2\bar n}{N}=[1-\frac{2\bar n(0)}{N}]e^{-2t/nN}
+~
+
+i.e.     
+~ Equation { #eq-euler }
+\bar n(t) = \frac{N}{2}-\frac{N}{2}[1-\frac{2n(0)}{N}]e^{-2t/N}
+~
+
+#Problem 1.11.
+Calculate the derivative with respect to x of the following functions: ex, e3x, eax, ln x, ln x2, ln 3x,
+ln 1/x, sin x, cos x, sin 3x, and cos 2x.
+
+result：
+
+$e^x$ ,  $3e^3x$,  $ae^ax$, $1/x$, $2/x$, $1/x$, $-1/x$, $cosx$, $-sinx$, $3cos3x$, $-2sin2x$
+
+#Problem 1.12.
+
+Calculate the following integrals:
+
+result:
+
+$1/4$, $\frac{ln2}{4}$, $\frac{e^6-e^3}{3}$, $\frac{1}{-(\gamma-1)}x^{-(\gamma-1)}$
+
+#Problem 1.13.
+
+Calculate the partial derivatives of x^2 + xy + 3y^2 with respect to x and y.
+
+$\frac{\partial f}{\partial x}=2x+y$
+
+$\frac{\partial f}{\partial y}=x+6y$
+
+#Problem 1.14.
+
+Calculate the first three nonzero terms of the Taylor series approximations about x = 0 for the
+following functions:
+
+$e^{ax}=1+ax+\frac{1}{2}a^2x^2$
+
+$ln{(1+x)}=x-\frac{1}{2}x^2+\frac{1}{6}x^3$
+
+$(1+x)^n=1+nx+\frac{1}{2}n(n-1)x^2$
+
 
 
 
