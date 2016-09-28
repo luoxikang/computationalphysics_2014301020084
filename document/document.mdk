@@ -16,7 +16,7 @@ N = 27? Does the system appear to show a direction of time? Choose various value
 that are multiples of 3 up to N = 270. Is the direction of time better defined for larger N ?
 
 A: As time lapsing, particle move continuously because of Lennard-Jones potential.n1, n2, n3 also change at different time.
-The system appera to show a direction of time.When N=270,the macroscopic behavior of the system is more obvious.The direction
+The system appear to show a direction of time.When N=270,the macroscopic behavior of the system is more obvious.The direction
 of time is better defined.
 
 (c) The time shown in the plots is in terms of σ(m/ǫ)^1/2^  , where σ and ǫ are the length and energy
@@ -42,7 +42,7 @@ divided between the three regions. Run the video both forward and backward. Can 
 by just looking at the video which direction is forward? Repeat for increasing values of N .
 Does your conclusion about the direction of time become more certain for larger N ?
 
-A:It can be told that when the side parts' particles become more,the direcction is forward.
+A:It can be told that when the side parts' particles become more,the direction is forward.
 
 Yes ,when N is larger, the direction of time become more certain.
 
@@ -304,7 +304,7 @@ i.e.
 
 #Problem 1.11.
 Calculate the derivative with respect to x of the following functions: $e^x$, $e^{3x}$, $e^{ax}$, $lnx$, $lnx2$, $ln3x$,
-ln 1/x, sin x, cos x, sin 3x, and cos 2x.
+$ln1/x$, sin x, cos x, sin 3x, and cos 2x.
 
 result：
 
