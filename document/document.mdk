@@ -84,7 +84,7 @@ A: No,the number of particles just fluctuate around a constant.The equilibrium i
 (d) If N & 32, does the system return to its initial state during the time you have patience to
 watch the system?
 
-A: No, it will not return to its initial state.
+A: No, it will not return to it's initial state.
 
 (e) How does $\bar n$, the mean number of particles on the left-hand side, depend on N after the system
 has reached equilibrium? For simplicity, the program computes various averages from the time
@@ -188,6 +188,11 @@ simulation and monitor the kinetic energy and potential energy until each system
 reach equilibrium. What is the mean potential and kinetic energy of each system? Is the total
 energy of each system fixed (to within numerical error)
 
+![捕获]
+
+[捕获]: images/-.PNG "捕获" { width:auto; max-width:90% }
+
+
 A: For A, mean potential and kinetic energy are -3.02 and 0.09.For B, they separately are -4.40 and 0.14.
 Total energy of each system fixed.
 
@@ -197,11 +202,14 @@ choose ǫ~AB~ = 1.25 and σ~AB~ = 1.1. What quantity is exchanged between the tw
 
 A:Particle's kinetic energy is exchanged.
 
+![捕获2]
+
+[捕获2]: images/-2.PNG "捕获2" { width:auto; max-width:90% }
+
 (c) After equilibrium has been established compare the average kinetic and potential energies of
 each system to their values before the two systems came into contact.
 
 A: System A's potential energy's absolute value decreased and system B's potential energy's absolute
-
 value increased.Both systems' kinetic energy is increased.
 
 (d) We seek a quantity that is the same in both systems after equilibrium has been established. Are
@@ -212,7 +220,7 @@ average kinetic and potential energies per particle? What quantity becomes the s
 two systems are in equilibrium? Do any other quantities become approximately equal? What
 can you conclude about the possible identification of the temperature in this system?
 
-A: The average kinetic energies are the same, but potential energies is not.
+A: The average kinetic energies are the same, but potential energies are not.
 The temperature wouldn't change.It is none of sense to compare the average kinetic and potential energies or the
 average kinetic and potential energies per particle.Average kinetic energy of particles.
 Average kinetic energy of particles is the possible identification of the temperature in this system.
@@ -295,7 +303,7 @@ i.e.
 ~
 
 #Problem 1.11.
-Calculate the derivative with respect to x of the following functions: ex, e3x, eax, ln x, ln x2, ln 3x,
+Calculate the derivative with respect to x of the following functions: $e^x$, $e^{3x}$, $e^{ax}$, $lnx$, $lnx2$, $ln3x$,
 ln 1/x, sin x, cos x, sin 3x, and cos 2x.
 
 result：
@@ -312,7 +320,7 @@ $1/4$, $\frac{ln2}{4}$, $\frac{e^6-e^3}{3}$, $\frac{1}{-(\gamma-1)}x^{-(\gamma-1
 
 #Problem 1.13.
 
-Calculate the partial derivatives of x^2 + xy + 3y^2 with respect to x and y.
+Calculate the partial derivatives of $x^2 + xy + 3y^2$ with respect to x and y.
 
 $\frac{\partial f}{\partial x}=2x+y$
 
