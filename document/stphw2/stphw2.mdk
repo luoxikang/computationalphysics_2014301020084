@@ -1,14 +1,4 @@
-Title         : STP Homework Chapter 2
-Author        : Shangshulee SN:2014301020084
-Logo          : True
 
-[TITLE]
-
-# Problem 2.1 Physiological sensation of temperature
-
-(a) The warm hands will fell cold and the cold hands will fell warm.
-
-(b) When we have a fever, wen will fill cold even the room is warm.
 
 #Problem 2.2 
 
@@ -44,5 +34,23 @@ Because the thermometers' influence on the system must be small enough and don't
 
 #Problem 2.7
 
-(a)
+(a) Positive
+
+(b) Negative
+
+(c) Negative
+
+#Problem 2.8
+
+(a) Because the system absorbed heat Q from surroundings, so it returned to its original pressure and 
+volume but done net amount of work.
+
+(b) The work is the negative of the area enclosed by the path
+
+$W=-\frac{1}{2}(P_{high}-P_{low})(V_{high}-V_{low})$
+
+#Problem 2.9
+
+The temperature of the gas will increase because the pump is thermally insulated, the work piston done convert to
+the internal energy.So the temperature will increase.
 
