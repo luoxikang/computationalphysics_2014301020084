@@ -75,3 +75,42 @@ I use too much internal energy to keep my temperature because I give too much he
 Please make the surroundings' temperature higher.
 
 #Problem 2.12
+
+
+#Problem 2.13
+
+via ideal gas state equation:
+
+~ Equation { #eq-euler }
+PV = NkT
+~
+and:
+~ Equation { #eq-euler }
+E=\frac{3}{2}NkT
+~
+we have:
+~ Equation { #eq-euler }
+E = \frac{3}{2}PV
+~
+via $\Delta E=W+Q$
+
+$1\to2$:$\Delta E=\frac{3}{2}P_h(V_h-V_l)=-P_h(V_h-V_l)+Q$
+
+thus $Q=\frac{5}{2}P_h(V_h-V_l)$
+
+$2\to3$: $\Delta E=\frac{3}{2}V_h(P_l-P_h)=Q$
+
+$3\to4$: $\Delta E=\frac{3}{2}P_l(V_l-V_h)=-P_l(V_l-V_h)+Q$
+
+$Q=\frac{5}{2}P_l(V_l- V_h)$
+
+$4\to1$: $\Delta E=\frac{3}{2}V_l(P_h-P_l)=Q$
+
+Because the system finally V,P are not changed, so the net change of internal energy E is zero.
+
+#Problem 2.14
+
+When a bicycle pump is working, because the pressure is quickly changed, it can be regard as adiabatic processes.
+
+The air block that move vertically in the atmosphere can be regard as adiabatic processes.
+#Problem 2.15
