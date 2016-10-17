@@ -119,13 +119,13 @@ b.calculate()
 c.calculate()
 d.calculate(ch_g = True)
 
-plt.plot(a.xl, a.yl, label = "No air resistance",lw=1.5)
-plt.plot(b.xl, b.yl, label = "With airresistance",lw=1.5)
-plt.plot(c.xl, c.yl, label = "Consider density", lw=1.5)
-plt.plot(d.xl, d.yl, label = "With g changed", lw=1.5)
-plt.legend(loc=1,bbox_to_anchor=(1.12,1)) 
-plt.xlabel("x/m")
-plt.ylabel("y/m")
+#plt.plot(a.xl, a.yl, label = "No air resistance",lw=1.5)
+#plt.plot(b.xl, b.yl, label = "With airresistance",lw=1.5)
+#plt.plot(c.xl, c.yl, label = "Consider density", lw=1.5)
+#plt.plot(d.xl, d.yl, label = "With g changed", lw=1.5)
+#plt.legend(loc=1,bbox_to_anchor=(1.12,1)) 
+#plt.xlabel("x/m")
+#plt.ylabel("y/m")
 
 cannonl = [a, b, c, d]
 def compare():
@@ -151,30 +151,35 @@ def compare():
         ax.legend()
     fig.tight_layout()
     
-def cp_thax():
-    def find_tha(m):
-        xll = []
-        thal = np.arange(0, pi/2, 0.01)
-        for tha in thal:
-            m.reset(700, tha)
-            xl = m.calculate()
-            xll.append(xl)
-        xlmax = max(xll)
-        d = dict(zip(xll, thal))
-        return (thal, xll, d[xlmax])
-    fig, ax = plt.subplots()
-    for ca in cannonl[:3]:
-        z = find_tha(ca)
-        ax.plot(z[0], z[1])
-        ax.set_xlabel(r"$\theta/rad$")
-        ax.set_ylabel("$x_{max}$")
-        th = z[2]/pi*180
-        print "Angle that make x max is %.2f" %th
-    
-    l1,l2,l3 = ax.lines
-    plt.legend((l1,l2,l3), ("No air resist", "air resist","consider density"), loc=1, bbox_to_anchor=(1.1,1.1))
 
+def c_single(m):
+    xll = []
+    thal = np.arange(0, pi/2, 0.01)
+    for tha in thal:
+        m.reset(700, tha)
+        xl = m.calculate()
+        xll.append(xl)
+    return (thal, xll)
+fig, ax = plt.subplots()    
+
+for ca in cannonl[:3]:
+    z = c_single(ca)
+    xmax = max(z[1])
+    thax = dict(zip(z[1],z[0]))[xmax]
+    ax.plot(z[0], z[1])
+    ax.set_xlabel(r"$\theta/rad$")
+    ax.set_ylabel("$x_{max}$")
+    th = thax/pi*180
+    ax.annotate("($%.2f^\circ$,$%dm$)" %(th,xmax), xy=(thax, xmax),xycoords='data', xytext=(thax-0.1,xmax-4000),textcoords='data',size=12, arrowprops=dict(arrowstyle="->"))
+
+l1,l2,l3 = ax.lines
+plt.legend((l1,l2,l3), ("No air resist", "air resist","consider density"), loc=1, bbox_to_anchor=(1.1,1.1))
+
+
+
+fig.canvas.draw()
+fig.show()
 #compare()
-cp_thax()
+
 
 
