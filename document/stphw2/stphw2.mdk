@@ -75,7 +75,9 @@ I use too much internal energy to keep my temperature because I give too much he
 Please make the surroundings' temperature higher.
 
 #Problem 2.12
+materials have a smaller heat capacity than water: Cu(s), Al(s), Ag(s).
 
+materials have a larger heat capacity than water: H~2~O~2~(l), H~2~SO~4~(l), Fe~3~O~4~(s)
 
 #Problem 2.13
 
@@ -113,4 +115,39 @@ Because the system finally V,P are not changed, so the net change of internal en
 When a bicycle pump is working, because the pressure is quickly changed, it can be regard as adiabatic processes.
 
 The air block that move vertically in the atmosphere can be regard as adiabatic processes.
+
 #Problem 2.15
+
+via ideal gas pressure equation:
+~ Equation { #eq-euler }
+PV=NKT
+~
+
+when N is constant, we have:
+~ Equation { #eq-euler }
+T = CPV
+~
+~ Equation { #eq-euler }
+V=\frac{T}{CP}
+~
+
+$C=1/NK$
+
+In adiabatic processes:
+
+~ Equation { #eq-euler }
+TV^{\gamma-1}=constant
+~
+
+via (5) and (7):
+~ Equation { #eq-euler }
+PV^{\gamma}=constant
+~
+via (6) and (7):
+~ Equation { #eq-euler }
+TP^{(1-\gamma)/\gamma}=constant
+~
+
+#Problem 2.16
+
+ 
