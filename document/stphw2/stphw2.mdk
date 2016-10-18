@@ -120,7 +120,7 @@ The air block that move vertically in the atmosphere can be regard as adiabatic 
 
 via ideal gas pressure equation:
 ~ Equation { #eq-euler }
-PV=NKT
+PV=NkT
 ~
 
 when N is constant, we have:
@@ -131,7 +131,7 @@ T = CPV
 V=\frac{T}{CP}
 ~
 
-$C=1/NK$
+$C=1/Nk$
 
 In adiabatic processes:
 
@@ -150,4 +150,34 @@ TP^{(1-\gamma)/\gamma}=constant
 
 #Problem 2.16
 
- 
+Because for ideal gas, the internal energy just depend on its temperature:
+$E=C_vT$
+
+#Problem 2.17
+
+(a) via equation (7) in 2.15,we have:
+
+$T_2=T_1(\frac{V_1}{V_2})^{\gamma-1}$
+
+where $\gamma=1.4$, $\frac{V_1}{V_2}=15$, hence:$T_2=2.95T_1$
+
+via (8) we have:
+
+$P_2=P_1(\frac{V_1}{V_2})^{\gamma}=44.3P_1$
+
+(b) via (4) the pressure increase by a factor of 15.
+
+(c) For adiabatic process the pressure change more.
+
+#Problem 2.18
+
+For ideal gas:
+
+$W=C_V(T_2-T_1)=\frac{C_V}{Nk}(P_2V_2-P_1P_1)=\frac{C_V}{C_P-C_V}(P_2V_2-P_1P_1)=\frac{P_2V_2-P_1P_1}{\gamma-1}$
+
+
+
+
+
+
+
