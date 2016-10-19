@@ -20,13 +20,13 @@ Because the thermometers' influence on the system must be small enough and don't
 
 #Problem 2.4
 
-(a) The relation is 1℃=1.8℉
+(a) The relation is $1 ^\circ C=1.8 ^\circ F$
 
-(b) 98.6℉ = 37℃=310.15K
+(b) $98.6^\circ F = 37^\circ C=310.15K$
 
-(c) 70℉ = 21.1℃, it's lower than 30℃.
+(c) $70^\circ F = 21.1^\circ C$, it's lower than $30^\circ C$.
 
-(d) 1 centigrade= 1℃. Their unit are equal.
+(d) $1 centigrade= 1^\circ C$. Their unit are equal.
 
 #Problem 2.5
 -50℃~3000℃
@@ -171,13 +171,122 @@ $P_2=P_1(\frac{V_1}{V_2})^{\gamma}=44.3P_1$
 
 #Problem 2.18
 
-For ideal gas:
+(a) For ideal gas:
 
 $W=C_V(T_2-T_1)=\frac{C_V}{Nk}(P_2V_2-P_1P_1)=\frac{C_V}{C_P-C_V}(P_2V_2-P_1P_1)=\frac{P_2V_2-P_1P_1}{\gamma-1}$
 
+(b) via (8) and $W=-\int_{V_1}^{V_2}P(T,v)dV$, we have:
+
+$W=-C\int_{V_1}^{V_2}\frac{1}{V^{\gamma}}dV=\frac{C}{\gamma-1}V_2^{1-\gamma}-V_1^{1-\gamma}$
+
+where$P_i=CV_i^{-\gamma}, i=1,2$
+
+so, $W=\frac{P_2V_2-P_1P_1}{\gamma-1}$
 
 
+#Problem 2.19
 
+When the system worked a circle:
 
+$\Delta S_{total}=\Delta S_{low}+ \Delta S_{high}=-\frac{Q_{low}}{T_{low}}+\frac{Q_{high}}{T_{high}}\geqslant0$
 
+i.e. 
+~ Equation { #eq-euler }
+\frac{Q_{high}}{Q_{low}}\geqslant\frac{T_{high}}{T_{low}}
+~
 
+via $COP=\frac{Q_{low}}{W}=\frac{Q_{low}}{Q_{high}-Q_{low}}=\frac{1}{\frac{Q_{high}}{Q_{low}}-1}$
+
+via (10), we can get:
+maximum value of the COP is 
+
+$COP = \frac{T_{low}}{T_{high}-T_{low}}$
+
+#Problem 2.20
+
+Similar to 2.19
+$COP=\frac{T_{high}}{T_{high}-T_{low}}$ 
+
+When $T_{high}=23^\circ C$, $T_{low}=0^\circ C$, 
+COP=1
+
+No , via the relation COP is larger when T~low~ is larger.
+
+#Problem 2.21
+
+In the two processes, the change in entropy of the entire system can be expressed follow:
+
+~ Equation { #eq-euler }
+\Delta S=Cln\frac{T_b}{T_w}-\frac{C(T_b-T_w)}{T_b}
+~
+
+In process 1:$T_w=273K$, $T_b=273+25=298K$, $C=4184J/K$
+
+$\Delta S_1=15.6J/K$
+
+In process2: $T_w=298K$, $T_b=323K$
+
+$\Delta S_2=13.2J/K$,   thus $\Delta S=\Delta S_1+\Delta S_2=28.8J/K$
+
+It's approximately a half the change from Example 2.15
+
+#Problem 2.22
+
+In fact, (11) is the same as the (2.105) in the textbook.So the gives the same numerical result.
+
+#Problem 2.23
+
+(a) assume $T_A>T_B$, then
+
+$W=Q_{high}-Q_{low}=C_A(T_A-T)-C_B(T-T_B)=C_A(T_A-T)+C_B(T_B-T)$
+
+(b) in (2.93), $T=\frac{T_A+T_B}{2}$ 
+
+   in (2.109), $T=\sqrt{{T_A}{T_B}}$
+   
+(c) use the relations in (b), $T_1=(256+144)/2=200K$
+
+$T_2=\sqrt{256\times144}=192k$
+
+we can see in the second process final temperature is lower, because it done work on the surroundings.
+
+(d) In thermal contact, $dQ_A=C_AdT=ATdT$, so
+
+$\Delta Q_A=\int_{T_A}^{T}ATdT=\frac{A}{2}(T_A^2-T^2)$
+similarly, $\Delta Q_B=\frac{B}{2}(T_B^2-T^2)$
+
+via $\Delta E=\Delta Q_A+\Delta Q_B=0$, we can have:
+
+$T=\sqrt{\frac{AT_A^2+BT_B^2}{A+B}}$
+
+When maximum work is extracted:
+
+$\Delta S=\int_{T_A}^{T}AdT+\int_{T_B}^{T}BdT=A(T-T_A)+B(T-T_B)=0$
+
+so, $T=\frac{AT_A+BT_B}{A+B}$
+
+maximum work is $W=\frac{A}{2}(T_A^2-T^2)-\frac{B}{2}(T^2-T_B^2)$
+
+where $T=\frac{AT_A+BT_B}{A+B}$
+
+#Problem 2.24
+
+(a) via $\Delta S=0$, we have:
+
+$(\frac{T_2}{T_1})^\frac{3}{2}=\frac{V_1}{V_2}$
+
+i.e. $T_1V_1^{2/3}=T_2V_2^{2/3}$, while for ideal gas, $\gamma=5/3$
+
+thus we can have (2.44).
+
+(b) For the gas, $W=0$, $\Delta Q=0$, so T is not changed.
+
+so, $\Delta=Nkln\frac{V_2}{V_1}$
+
+(c) via (4) , $V_2/V_1=T_2P_1/T_1P_2$
+
+insert it to (2.133),we, have
+
+~ Equation { #eq-euler }
+\Delta S=\frac{5}{2}Nkln\frac{T_2}{T_1}+Nkln\frac{P_1}{P_2}
+~
