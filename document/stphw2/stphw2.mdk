@@ -316,7 +316,7 @@ so the maximum useful work is $-\Delta F$
 
 so the maximum useful work is $-\Delta G$
 
-$Problem 2.27
+#Problem 2.27
 
 via the first relation:
 
@@ -344,6 +344,42 @@ via (4) we see that $(\frac{\partial V}{\partial T})_P=\frac{V}{T}$
 
 so finally $(\frac{\partial H}{\partial P})_T=0$, the enthalpy is a function fo T only.
 
+
+#Problem 2.29
+via (2.24)
+
+$dE=\frac{3}{2}NkdT+\frac{N^2a}{V^2}dV=0$, so
+
+$(\frac{\partial T}{\partial V})_E=-\frac{2Na}{3kV^2}<0$
+
+thus, a free expansion results in cooling.
+
+#Problem 2.30
+
+
+~ Equation { #eq-alignment; caption:"Alignment example" }
+\begin{aligned} 
+ \alpha&=\frac{k(1-b\rho)}{kT-2a\rho(1-b\rho)^2}\\
+&\approx\frac{k}{\frac{KT}{1-b\rho}-2a\rho(1-b\rho)}\\
+&\approx\frac{k}{kT(1+b\rho)-2a\rho(1-b\rho)}
+\end{aligned}
+~
+
+ignore the term $\rho^2$, we obtain:
+
+~ Equation { #eq-alignment; caption:"Alignment example" }
+\begin{aligned} 
+\alpha&=\frac{1}{T}(\frac{1}{1+b\rho-\frac{2a\rho}{kT}})\\
+&\approx\frac{1}{T}[1-\rho(b-\frac{2a}{kT})]
+\end{aligned}
+~
+
+
+in this approximation:
+
+~ Math
+ T\alpha-1=\rho[(2a/kT)-b]
+~
 #Problem 2.31
 
 $\frac{\partial z}{\partial x}=2xy+8x^3y^6$
