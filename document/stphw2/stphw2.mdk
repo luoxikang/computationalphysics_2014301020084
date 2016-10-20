@@ -290,3 +290,92 @@ insert it to (2.133),we, have
 ~ Equation { #eq-euler }
 \Delta S=\frac{5}{2}Nkln\frac{T_2}{T_1}+Nkln\frac{P_1}{P_2}
 ~
+
+#Problem 2.25
+
+(a) $H(S,P,N)$, take a total differentiation:
+
+$dH=(\frac{\partial H}{\partial S})_{P,N}dS+(\frac{\partial H}{\partial P})_{S,N}dP+(\frac{\partial H}{\partial N})_{S,P}dN$
+
+compare with (2.159)
+we have the result.
+
+(b) 
+
+At fixed entropy, $\Delta A=\Delta E+P\Delta V=\Delta H\le0$
+
+so $H(S, P, N)$ is minimum for an equilibrium system at fixed entropy.
+
+#Problem 2.26
+
+(a) use (2.171), make $\Delta V=0$, then
+$W_{useful}\le-(\Delta E-T\Delta S)=-\Delta F$
+so the maximum useful work is $-\Delta F$
+
+(b)$W_{useful}\le-(\Delta E+P\Delta V-T\Delta S)=-\Delta G$
+
+so the maximum useful work is $-\Delta G$
+
+$Problem 2.27
+
+via the first relation:
+
+$\frac{\partial^2 F}{\partial T\partial V}=\frac{\partial^2 F}{\partial V\partial T}$
+
+$\frac{\partial F}{\partial T}=-S$,
+$\frac{\partial F}{\partial V}=-P$
+
+so we can have:
+$(\frac{\partial S}{\partial V})_T=(\frac{\partial P}{\partial T})_V$
+
+Similarly use other two relations, we can get the result.
+
+#Problem 2.28
+
+via $dH=TdS+VdP$
+
+we have:$(\frac{\partial H}{\partial P})_T=T(\frac{\partial S}{\partial P})_T+V$
+
+using Maxwell relation(2.192), we can have:
+
+$(\frac{\partial H}{\partial P})_T=-T(\frac{\partial V}{\partial T})_P+V$
+
+via (4) we see that $(\frac{\partial V}{\partial T})_P=\frac{V}{T}$
+
+so finally $(\frac{\partial H}{\partial P})_T=0$, the enthalpy is a function fo T only.
+
+#Problem 2.31
+
+$\frac{\partial z}{\partial x}=2xy+8x^3y^6$
+
+$\frac{\partial z}{\partial y}=x^2+12x^4y^5$
+
+$\frac{\partial^2 z}{\partial x\partial y}=2x+48x^3y^5$
+
+$\frac{\partial^2 z}{\partial y\partial x}=2x+48x^3y^5$
+
+$\frac{\partial^2 z}{\partial x\partial y}=\frac{\partial^2 z}{\partial y\partial x}$
+
+#Problem 2.32
+
+(a) $m(x)=3x^2$, $g=f(x)-xm=-2x^3$, so $g(m)=-2(m/3)^{3/2}$
+
+(b)for $f(x)=x$, $m=1$, $g=f(x)-xm=0$, so Legendre transform is not exist.
+
+  for $f(x)=sinx$, $m=cosx$, $g=sinx-xcosx$, $g(m)=\sqrt{1-m^2}-arccos(m)m$
+  or $g(m)=-\sqrt{1-m^2}-arccos(m)m$
+
+
+#Problem 2.33
+
+consider $E(S, V, N)$ as a function of S, $m=\frac{\partial E}{\partial S}=T$
+
+so $g=E(S, V, N)-ST=F$
+
+$dF=dE-d(ST)=TdS-PdV+\mu dN-(SdT+TdS)=-SdT-PdV+\mu dN$
+
+i.e. $F=E-TS=F(T,V,N)$
+
+
+
+
