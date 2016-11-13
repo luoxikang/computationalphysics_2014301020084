@@ -50,7 +50,7 @@ cdef class NLpendulum(object):
             self.traj_the.append(self.the)
             self.traj_w.append(self.w)
             self.tl.append(self.t)
-            if self.t/self.T >300 and self.t%self.T< 0.0001:
+            if self.t/self.T >300 and self.t%self.T< 10e-10:
                 self.b_the.append(self.the)
              
         
