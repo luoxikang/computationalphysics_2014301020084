@@ -69,6 +69,11 @@ a. Run the program:
  [eabPNG]: images/eabPNG.PNG "eabPNG" { width:auto; max-width:90% }
   
 b. $P(a\to b)=0.905$, $P(b\to a)=0.095$.
+
+   the probability that energy goes from the hotter to the colder system is
+   $P(h\to c)=2\sum\limits_{\substack{E_A\\ (E_A>E_B)}}P_A(E_A)P(A\to B)=0.629$
+   
+   similarly we can get the probability found in Table 4.3 is 0.58.
 c.   
 
 
