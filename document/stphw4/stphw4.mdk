@@ -1,0 +1,43 @@
+Title         : STP Homework Chapter 4
+Author        : ShangshuLee 2014301020084
+
+
+[TITLE]
+
+# Problem 4.1 
+
+a. It's equal to $\bar s_1$, it's 1/5;Because the E is $-\mu B$.
+b. 3/5.
+c. From Figure 4.1 the probability is 1/2.
+
+# Problem 4.2
+
+a. $E=-2\mu B$ implies that there is 3 spins' magnetic moment point antiparallel to the B.So the 
+number of microstates is $C_4^1=4$.The probability that a particular spin is up is 1/4 and for the down
+is 3/4.
+b. $E=-\mu B$ implies that there is 5 spins' magnetic moment point antiparallel to the B. So the
+number of microstates is $C_9^4=126$. $P(-1)=5/9, P(1)=4/9$.
+
+# Problem 4.3
+
+$P=(1/2)^5=1/32$
+
+# Problem 4.4
+
+a. For N=3 and E=3, the  possible microstates is same to the Table 4.1 in textbook.So $\Omega=10$.
+From (4.3), $\Omega=\frac{5!}{3!2!}=10$.The results are same.
+b. $\Omega=\frac{9!}{6!3!}=84$
+c. P=3/10.
+d. P=1/3.
+
+# Problem 4.5
+
+$\overline{E_A}=\sum\limits_{i=0}^6E_AP_A=252/84=3$
+ 
+$\overline{E_A^2}=\sum\limits_{i=0}^6E_A^2P_A=1008/84=12$
+ 
+So, variance is $\overline{E_A^2}-\overline{E_A}^2=3$, the standard deviation is $\sqrt{3}$
+
+# Problem 4.6
+
+a. 
