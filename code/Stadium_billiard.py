@@ -28,7 +28,7 @@ class Stadium_billiard(object):
         extrusion(shape=cr1+cr2+l1+l2)
         ball = sphere(pos=(0, self.y, 0), radius=0.2, make_trail=True, color=(0, 1, 0))
         ball.trail_object.radius = 0.05
-        ball.v = vector(0.4, 0.4, 0)
+        ball.v = vector(0.4, 0.4, 0.4)
     
         dt=0.2
         t=0.0
@@ -49,9 +49,10 @@ class Stadium_billiard(object):
                 self.pvl.append(ball.v.x)
     
             if l > ball.pos.y > -l:
-                if not (abs(ball.pos.x) < 10):
-                    ball.v.x = -ball.v.x
-                    
+                nvector = ball.pos - vector(0, ball.pos.y, 0)
+                if not (nvector.mag < 10):
+                    ang = diff_angle(nvector, -ball.v)
+                    ball.v = -ball.v.rotate(2*ang, cross(-ball.v, nvector))
             elif ball.pos.y > l:
                 nvector = ball.pos-cir1c
                 if not (nvector.mag < 10):
@@ -68,35 +69,35 @@ class Stadium_billiard(object):
 
 
 
-#a = Stadium_billiard(a=0.5)
-#a.ani(demo=True, dur=10000)
-#plt.plot(a.pxl, a.pvl, '.')
-#plt.title(r"Stadium Billiard:$\alpha=0.1$")
-#plt.xlabel('x')
-#plt.ylabel('vx')
-#plt.xlim(-10, 10)
-
 a = Stadium_billiard(a=0.5)
-b = Stadium_billiard(a=0.5, y=1.00001)
-a.ani()
-b.ani()
+a.ani(demo=True, dur=10000)
+plt.plot(a.pxl, a.pvl, '.')
+plt.title(r"Stadium Billiard:$\alpha=0.1$")
+plt.xlabel('x')
+plt.ylabel('vx')
+plt.xlim(-10, 10)
 
-dis = np.abs(np.array(a.yl)-np.array(b.yl))
-
-fig = plt.figure(figsize=(10,5))
-ax1 = fig.add_subplot(121)
-ax2= fig.add_subplot(122)
-
-ax1.plot(a.xl, a.yl, color='r', label='ball a')
-ax1.plot(b.xl, b.yl, label='ball b')
-ax1.set_xlabel('x')
-ax1.set_ylabel('y')
-ax1.set_title('Two trajectories')
-ax1.legend()
-
-ax2.plot(a.t, dis)
-ax2.set_yscale('log')
-ax2.set_xlabel('time')
-ax2.set_ylabel('separation')
-ax2.set_title(r"$\alpha=0.5$, divergence of two trajectories")
-plt.tight_layout()
+#a = Stadium_billiard(a=0.1)
+#b = Stadium_billiard(a=0.1, y=1.00001)
+#a.ani()
+#b.ani()
+#
+#dis = np.abs(np.array(a.yl)-np.array(b.yl))
+#
+#fig = plt.figure(figsize=(10,5))
+#ax1 = fig.add_subplot(121)
+#ax2= fig.add_subplot(122)
+#
+#ax1.plot(a.xl, a.yl, color='r', label='ball a')
+#ax1.plot(b.xl, b.yl, label='ball b')
+#ax1.set_xlabel('x')
+#ax1.set_ylabel('y')
+#ax1.set_title('Two trajectories')
+#ax1.legend()
+#
+#ax2.plot(a.t, dis)
+#ax2.set_yscale('log')
+#ax2.set_xlabel('time')
+#ax2.set_ylabel('separation')
+#ax2.set_title(r"$\alpha=0.1$, divergence of two trajectories")
+#plt.tight_layout()
