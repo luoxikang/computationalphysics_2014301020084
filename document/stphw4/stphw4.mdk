@@ -190,3 +190,38 @@ So when T=300K, $P_1=0.999999$, $P_2=10^{-6}$
 
 when T=1000k, $P_1=0.985=98.5\%$, $P_2=0.015=1.5\%$
 
+#Problem 4.25
+
+It's a Gaussian distribution with $\bar E=E$.
+
+#Problem 4.26
+
+It's a Gaussian distribution with $\bar E=\widetilde{E}$, where $\widetilde{E}$ is most probable value of E.
+
+#Problem 4.27
+
+At ground state every electron have two states(s=+1 or -1) and every state's probability is equal.So
+$S=kln\Omega=kln2^N=kNln2$ 
+
+#Problem 4.28
+
+
+a. via (4.129) $lnZ_1=-\frac{1}{2}\beta\hbar\omega-ln(1-e^{-\beta\hbar\omega})$
+
+$f=-kTlnZ_1=\frac{1}{2}\hbar\omega+kTln(1-e^{-\beta\hbar\omega})$
+
+~ Equation { #eq-alignment; caption:"Alignment example" }
+\begin{aligned} 
+ s&=-(\frac{\partial F}{\partial T})=-[kln(1-e^{-\hbar\omega/kT})-kT\frac{\frac{\hbar\omega}{kT^2}e^{-\hbar\omega/kT}}{1-e^{-\hbar\omega/kT}}]\\
+  &=k[\frac{\beta\hbar\omega}{e^{\beta\hbar\omega}-1}-ln(1-e^{\beta\hbar\omega})]
+\end{aligned}
+~
+~math
+\begin{aligned}  
+\bar e&=-\frac{\partial{lnZ}}{\partial \beta}=\frac{1}{2}\hbar\omega+\frac{\hbar\omega^{-\beta\hbar\omega}}{1-e^{\beta\hbar\omega}}\\
+      $=\hbar\omega(\frac{1}{2}+\frac{1}{e^{\beta\hbar\omega}-1})
+\end{aligned}
+~
+b. $Z_N=Z_1^N$, so $\bar E=N\bar e$
+c. when make $Q=\frac{N}{e^{\beta\hbar\omega}-1}$, the two ensembles give identical results.
+
