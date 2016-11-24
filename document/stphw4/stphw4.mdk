@@ -78,3 +78,115 @@ c.
 
 
 
+
+
+#Problem 4.11
+via (4.24)
+
+$n=\frac{2L}{h}(2m\frac{144h^2}{8mL^2})^{\frac{1}{2}}=12$
+
+#Problem 4.12
+
+
+#Problem 4.15
+
+$\Gamma=\frac{1}{N!}(\frac{4\pi V}{3h^3})^N(\frac{2mE}{N})^{\frac{3N}{2}}$
+
+compare it to (4.49), the V and E dependence of $\Gamma$ is the same.But the N dependence is
+different.
+
+#Problem 4.16
+
+Take the derivative of (4.51) for E, we can get:
+
+$\frac{1}{\Gamma}\frac{d\Gamma}{dE}=\frac{3N}{2E}$
+
+so $g=\frac{3N\Gamma}{2E}$, because $\Gamma(E,V,N)$ is very large.So g is very large.So $\Gamma$ is 
+rapidly increasing functions of E.Similarly we can get that $\Gamma$ and E is are rapidly increasing functions of 
+E, V, N.
+
+#Problem 4.17
+
+In section 2.19, $\Delta S=\frac{3}{2}Nkln\frac{E_2}{E_1}+Nkln\frac{V_2}{V_1}$
+
+So if we make $\Delta S=S(E_2,V_2,N)-S(E_1,V_1,N)$, the form of S is 
+
+~ Equation { #eq-euler }
+S=Nk[ln\frac{V}{N}+\frac{3}{2}ln\frac{mE}{3N\pi\hbar^2}+\frac{5}{2}]
+~
+
+then we can
+get the same form of $\Delta S$  in 2.19.
+
+#Problem 4.18
+via (4.51)
+~ math
+ln\Gamma(E, V, N)=Nln\frac{V}{N}+\frac{3}{2}Nln\frac{mE}{3N\pi\hbar^2}+\frac{5}{2}N
+~
+and $S=kln\Gamma(E)$, we can have (1). 
+
+ Because from Problem 4.16,  $g(E)=\frac{3N\Gamma}{2E}$
+
+so $lng(E)\Delta E=ln\frac{3N\Delta E}{2E}+ln\Gamma(E)$
+
+When N is small, because $\Delta E/E\approx0$, so the first term of right side is 0.
+When N is large, from Problem 4.16 we have $\Gamma$ is rapidly increasing functions of N.
+So $ln\Gamma(E)$ is so large that we can neglect the first term.
+
+Anyway way can get $lng(E)\Delta E=ln\Gamma (E)$, also we get (1)
+
+#Problem 4.19
+
+$S=Nk[ln\frac{V}{N}+\frac{3}{2}ln\frac{mkT}{2\pi \hbar^2}+\frac{5}{2}]$
+
+#Problem 4.20
+
+via 
+~ Equation { #eq-euler }
+\frac{\mu}{T}=-(\frac{\partial S}{\partial N})_{E,V}
+~
+
+~ Equation { #eq-alignment; caption:"Alignment example" }
+\begin{aligned} 
+ \frac{\mu}{T}&=-[k(ln\frac{V}{N}+\frac{3}{2}ln\frac{mE}{3N\pi \hbar^2}+\frac{5}{2})-Nk(\frac{1}{N}+\frac{3}{2N})]\\
+      &=-k(ln\frac{V}{N}+\frac{3}{2}ln\frac{mE}{3N\pi \hbar^2})
+\end{aligned}
+~
+
+so $\mu=-kT(ln\frac{V}{N}+\frac{3}{2}ln\frac{mE}{3N\pi \hbar^2})$
+
+#Problem 4.21
+
+Because $p=\frac{n}{N}$, so (4.72) can be written as $-\frac{2\mu B}{kT}=ln(\frac{1}{p}-1)$
+
+we can get $p=\frac{1}{1+e^{-2\mu B/kT}}=\frac{e^{\mu B/kT}}{e^{\mu B/kT}+e^{-\mu B/kT}}$ 
+
+via $n=\frac{1}{2}(N-\frac{E}{\mu B})$
+
+$-\frac{2\mu B}{kT}=ln(\frac{2N}{N-\frac{E}{\mu B}}-1)$
+
+$2N=N(1+e^{-2\mu/kT})-\frac{E}{\mu B}(1+e^{-2\mu B/kT})$
+
+we can get:
+~ Equation
+E=-N\mu B\frac{e^{\mu B/kT}-e^{-\mu B/kT}}{e^{\mu B/kT}+e^{-\mu B/kT}}=-N\mu Btanh\beta\mu B
+~
+#Problem 4.23
+
+In Table 4.6, every single $\epsilon_n$ match a single state n.So the $P_n(\epsilon_n)$ is just the
+$P_s$ in Boltzmann distribution.So we can have the relation (4.13).
+
+#Problem 4.24
+
+partition function $Z=e^{-\beta E_1}+e^{-\beta E_2}$ $(E_2>E_1)$
+
+$P_1=\frac{e^{-\beta E_1}}{e^{-\beta E_1}+e^{-\beta E_2}}=\frac{1}{1+e^{-\Delta E/kT}}$
+
+because $\Delta E/k=4180K$, $P_1=\frac{1}{1+e^{-4180/T}}$
+
+Similarly $P_2=\frac{1}{1+e^{4180/T}}$
+
+So when T=300K, $P_1=0.999999$, $P_2=10^{-6}$
+
+when T=1000k, $P_1=0.985=98.5\%$, $P_2=0.015=1.5\%$
+
