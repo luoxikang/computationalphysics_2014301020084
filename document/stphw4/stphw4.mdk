@@ -216,12 +216,40 @@ $f=-kTlnZ_1=\frac{1}{2}\hbar\omega+kTln(1-e^{-\beta\hbar\omega})$
   &=k[\frac{\beta\hbar\omega}{e^{\beta\hbar\omega}-1}-ln(1-e^{\beta\hbar\omega})]
 \end{aligned}
 ~
-~math
+
+~ Equation { #eq-alignment; caption:"Alignment example" }
 \begin{aligned}  
-\bar e&=-\frac{\partial{lnZ}}{\partial \beta}=\frac{1}{2}\hbar\omega+\frac{\hbar\omega^{-\beta\hbar\omega}}{1-e^{\beta\hbar\omega}}\\
+\bar e&=-\frac{\partial{lnZ}}{\partial \beta}=\frac{1}{2}\hbar\omega+\frac{\hbar\omega e^{-\beta\hbar\omega}}{1-e^{\beta\hbar\omega}}\\
       $=\hbar\omega(\frac{1}{2}+\frac{1}{e^{\beta\hbar\omega}-1})
 \end{aligned}
 ~
 b. $Z_N=Z_1^N$, so $\bar E=N\bar e$
 c. when make $Q=\frac{N}{e^{\beta\hbar\omega}-1}$, the two ensembles give identical results.
+
+#Problem 5.1
+
+a. They have the same form
+b. Because the relation between $Z_N$ and $Z$ is simple: $Z_N=Z_1^N$.And $Z_1$ can be easily derived.
+c.  $p=\frac{e^{\mu B/kT}}{e^{\mu B/kT}+e^{-\mu B/kT}}$ 
+d. Example 4.2 just make the N of $Z_N$ equal to 2.
+
+#Problem 5.2
+~ Equation { #eq-alignment; caption:"Alignment example" }
+\begin{aligned}
+\chi&=(\frac{\partial M}{\partial B})_T=kT\frac{\partial}{\partial B}(\frac{1}{Z}\frac{\partial Z}{\partial B})\\
+    &=kT[\frac{\partial}{\partial B}\frac{1}{Z}\frac{\partial Z}{\partial B} + \frac{1}{Z}\frac{\partial^2 Z}{\partial B^2}]\\
+    &=kT[-\frac{1}{Z^2}(\frac{\partial Z}{\partial B})^2+\frac{1}{Z}\frac{\partial^2 Z}{\partial B^2}]
+\end{aligned}
+~
+
+while $\frac{\partial^2 Z}{\partial B^2}=\sum\limits_s\beta^2M^2e^{-\beta(E_{0,s}-M_sB)}$
+$\bar M^2=\frac{1}{Z\beta^2}\frac{\partial^2 Z}{\partial B^2}$ and
+$\bar M=\frac{1}{\beta Z}\frac{\partial Z}{\partial B}$
+
+so we can write (7) as:
+$\chi=\frac{1}{\beta}[\beta^2\bar M^2-\beta^2{\bar M}^2]=\frac{1}{kT}[\beta^2\bar M^2-\beta^2{\bar M}^2]$
+
+# problem 5.4
+
+
 
