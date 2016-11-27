@@ -161,6 +161,10 @@ def perce():
     ax1.set_title(u'近日点进动轨迹')
     ax2.set_title(r"$\alpha=0.003$, linear fit")
     ax2.text(0.1, 200, u"Precession rate:%.1f degrees/yr" %rate )
+    ax2.set_xlabel("t/yr")
+    ax2.set_ylabel(r"$(\theta)$degrees")
+    ax1.set_xlabel('x/AU')
+    ax1.set_ylabel('y/AU')
     ax2.legend()
 
 def pperce():
