@@ -74,11 +74,79 @@ b. $P(a\to b)=0.905$, $P(b\to a)=0.095$.
    $P(h\to c)=2\sum\limits_{\substack{E_A\\ (E_A>E_B)}}P_A(E_A)P(A\to B)=0.629$
    
    similarly we can get the probability found in Table 4.3 is 0.58.
-c.   
+c. the number of accessible microstates is 50388.
+
+    $S=ln(50388)- ln(2860)=2.87$         
+d. $\bar E_A=\sum\limits_{A}P_AE_A=5.976\approx6$, 
+   $\widetilde{E}=6$     
+
+   $\overline{E_A^2}=\sum\limits_{A}P_AE_A^2=42.49$ ,$\sigma_A=\sqrt{\overline{E_A^2}-\bar E_A^2}=2.54$
+   
+   $\sigma_A/\bar E_A=0.42$, it's smaller than the ratio 0.58 in Table 4.3
+e. $S=ln7056=8.86$, $S_t=ln50388=10.8$
+
+#Problem 4.7
+a. Because E~A~ increase, E~B~ will decrease.$S_{tot}$ have a maximum when $E_A$ make the number of the total macrostas max.
+![sasb]
+b. $dS/dE$ is inversely proportional to the temperature.E~A~=100 when the slopes are equal.And the total entropy is max.
+
+Different $N_A$, $N_B$, $N_A=70$, $N_B=50$:
+
+![default]
+
+Now the E~A~ that make the slopes equal and total entropy max is approximately 120.
+[default]: images/default.jpg "default" { width:auto; max-width:90% }
 
 
+[sasb]: images/sasb.jpg "sasb" { width:auto; max-width:90% }
+
+#Problem 4.8
+a. result:
+
+  ![200]
+
+  In the figure, the black line: $N_A=N_B=4$, the blue: $N_A=N_B=16$, the red: $N_A=N_B=64$
+
+  And their widths are respectively 100, 50, 25. We can conclude that the widths decrease by 0.5 power of the number of the particles.
+b. result:
+   
+![20]
+
+ NO.Because E is too small, it doesn't satisfy the semiclassical limit.Variance is not proportional to N.
+c. result:
+
+  ![1200t]
+  
+  $P_A\varpropto e^{-\beta E_A}$, Because $N_A=1$, $\Omega_{total}$ just depend on $\Omega_{B}$, while $\Omega_{B}$ is a decreasing function of $E_A$  
+
+[1200t]: images/1200t.jpg "1200t" { width:auto; max-width:90% }
+
+[20]: images/20.jpg "20" { width:auto; max-width:90% }
 
 
+[200]: images/200.jpg "200" { width:auto; max-width:90% }
+
+#Problem 4.9
+a. P=1/84
+b. result:
+
+ ![ppp]
+ 
+c. Use $\Omega=\frac{(E+N-1)!}{E!(N-1)!}$, $P_s(E_s)=\frac{1}{\Omega}P_A(E_A)$, we can get:
+   $P_s(0)=0.446$, $P_s(1)=0.0955$, $P_s(2)=0.0147$, $P_s(3)=0.00125$, Figure:
+   
+![hhhhhhhh]
+     
+d. $E_A$ have $\Omega$ degeneracy.While E increase, $\Omega$ also increase.
+
+#Problem 4.10
+
+a. $\Omega(10)=2\times10^7$, $\Omega(100)=5\times10^{21}$, $\Omega(1000)=10^{40}$.Yes.
+b. Yes.
+
+[hhhhhhhh]: images/hhhhhhhh.png "hhhhhhhh" { width:auto; max-width:90% }
+
+[ppp]: images/ppp.PNG "ppp" { width:auto; max-width:90% }
 
 #Problem 4.11
 via (4.24)
@@ -86,7 +154,50 @@ via (4.24)
 $n=\frac{2L}{h}(2m\frac{144h^2}{8mL^2})^{\frac{1}{2}}=12$
 
 #Problem 4.12
+R=10, dimension=2
 
+![2-10]
+
+This figure show the relation between $\Gamma$(green line) and the actual number of microstates(blue points).
+They are approximately same.When R is large they're relative difference is smaller:
+
+R=40, dimension=2
+
+![2-40]
+
+data:
+
+
+![data]
+
+from the data we can find the minimum value of R for which the difference between the asymptotic relation and the exact number is less than 1% is 117.
+[data]: images/data.PNG "data" { width:auto; max-width:90% }
+
+[2-40]: images/2-40.PNG "2-40" { width:auto; max-width:90% }
+
+[2-10]: images/2-10.PNG "2-10" { width:auto; max-width:90% }
+
+#Problem 4.13
+
+R=30, dimension=3
+
+![3-30]
+
+[3-30]: images/3-30.PNG "3-30" { width:auto; max-width:90% }
+
+#Problem 4.14
+
+$g(E)=\frac{d\Gamma(E)}{dE}=2\pi V(\frac{\sqrt{2m}}{h})^3\sqrt{E}$
+
+$V=10^{-3}m^3$
+
+$m=0.029/N_Akg$, $N_A=6.02\times10^{23}$
+
+$E=\frac{3}{2}kT$, let $T=300K$, $k=1.38\times10{-23}J/K$
+
+$h=6.626\times10^{-34}J*S$, $\Delta E=10^{-27}J$
+
+we can have the number of microstate is : $g(E)\Delta E=7.1\times10^{47}$
 
 #Problem 4.15
 
@@ -207,23 +318,27 @@ $S=kln\Omega=kln2^N=kNln2$
 
 
 a. via (4.129) $lnZ_1=-\frac{1}{2}\beta\hbar\omega-ln(1-e^{-\beta\hbar\omega})$
-
-$f=-kTlnZ_1=\frac{1}{2}\hbar\omega+kTln(1-e^{-\beta\hbar\omega})$
+  
+  ~ math
+  f=-kTlnZ_1=\frac{1}{2}\hbar\omega+kTln(1-e^{-\beta\hbar\omega})
+  ~
 
 ~ Equation { #eq-alignment; caption:"Alignment example" }
 \begin{aligned} 
- s&=-(\frac{\partial F}{\partial T})=-[kln(1-e^{-\hbar\omega/kT})-kT\frac{\frac{\hbar\omega}{kT^2}e^{-\hbar\omega/kT}}{1-e^{-\hbar\omega/kT}}]\\
-  &=k[\frac{\beta\hbar\omega}{e^{\beta\hbar\omega}-1}-ln(1-e^{\beta\hbar\omega})]
+s&=-(\frac{\partial F}{\partial T})=-[kln(1-e^{-\hbar\omega/kT})-kT\frac{\frac{\hbar\omega}{kT^2}e^{-\hbar\omega/kT}}{1-e^{-\hbar\omega/kT}}]\\
+&=k[\frac{\beta\hbar\omega}{e^{\beta\hbar\omega}-1}-ln(1-e^{\beta\hbar\omega})]
 \end{aligned}
 ~
 
 ~ Equation { #eq-alignment; caption:"Alignment example" }
 \begin{aligned}  
 \bar e&=-\frac{\partial{lnZ}}{\partial \beta}=\frac{1}{2}\hbar\omega+\frac{\hbar\omega e^{-\beta\hbar\omega}}{1-e^{\beta\hbar\omega}}\\
-      $=\hbar\omega(\frac{1}{2}+\frac{1}{e^{\beta\hbar\omega}-1})
+&=\hbar\omega(\frac{1}{2}+\frac{1}{e^{\beta\hbar\omega}-1})
 \end{aligned}
 ~
+  
 b. $Z_N=Z_1^N$, so $\bar E=N\bar e$
+   
 c. when make $Q=\frac{N}{e^{\beta\hbar\omega}-1}$, the two ensembles give identical results.
 
 #Problem 5.1
@@ -243,13 +358,48 @@ d. Example 4.2 just make the N of $Z_N$ equal to 2.
 ~
 
 while $\frac{\partial^2 Z}{\partial B^2}=\sum\limits_s\beta^2M^2e^{-\beta(E_{0,s}-M_sB)}$
-$\bar M^2=\frac{1}{Z\beta^2}\frac{\partial^2 Z}{\partial B^2}$ and
+
+$\overline{M^2}=\frac{1}{Z\beta^2}\frac{\partial^2 Z}{\partial B^2}$ 
+
+and
+
 $\bar M=\frac{1}{\beta Z}\frac{\partial Z}{\partial B}$
 
 so we can write (7) as:
-$\chi=\frac{1}{\beta}[\beta^2\bar M^2-\beta^2{\bar M}^2]=\frac{1}{kT}[\beta^2\bar M^2-\beta^2{\bar M}^2]$
+$\chi=\frac{1}{\beta}[\beta^2[\overline{M^2}-\beta^2{\bar M}^2]=\frac{1}{kT}[\overline{M^2}-{\bar M}^2]$
 
-# problem 5.4
+# Problem 5.3
+a.
+M-T:
 
+![figure_1]
+ 
 
+[figure_1]: images/figure_1.png "figure_1" { width:auto; max-width:90% }
 
+C-T:
+
+![ct1]
+
+[ct1]: images/ct1.png "ct1" { width:auto; max-width:90% }
+b.
+
+$\chi-T$:
+
+![xt]
+
+[xt]: images/xt.png "xt" { width:auto; max-width:90% }
+
+c. $S=-(\frac{\partial F}{\partial T})_{V,N}=-Nk[ln(2cosh\beta\mu B)+\beta\mu Btanh\beta\mu B]$
+# Problem 5.4
+
+a. via condition known, 
+
+$M=\frac{N\mu}{2}=N\mu tanh(\beta\mu B)$, substituting the data 
+$\frac{\mu}{k}=0.672K/T$, $B=4$, we have:
+
+$tanh(\frac{2.68}{T}=1/2)$, so T=4.88K
+
+b.  via (4) we can get $\Delta E=0.927[tanh(0.672)-10tanh(6.72)]=-8.73J$
+
+c. $10tanh(6.72)=tanh(0.672/T)$, T=
