@@ -11,3 +11,4 @@
 - [x] [Exercise_07:Simulation and bifurcation diagram](https://www.zybuluo.com/lss9728/note/565809)
 - [x] [Exercise 08:Stadium Billiard](https://www.zybuluo.com/lss9728/note/573498)
 - [x] [Exercise 09:Planet orbit and Mercury precession](https://www.zybuluo.com/lss9728/note/581493)
+- [x][Exercise 10:Hyperion chaos](https://www.zybuluo.com/lss9728/note/589431)
