@@ -12,3 +12,4 @@
 - [x] [Exercise 08:Stadium Billiard](https://www.zybuluo.com/lss9728/note/573498)
 - [x] [Exercise 09:Planet orbit and Mercury precession](https://www.zybuluo.com/lss9728/note/581493)
 - [x] [Exercise 10:Hyperion chaos](https://www.zybuluo.com/lss9728/note/589431)
+- [x] [Exercise 11:Electric potentials and Fields](https://www.zybuluo.com/lss9728/note/597789)
