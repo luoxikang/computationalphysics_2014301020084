@@ -13,3 +13,4 @@
 - [x] [Exercise 09:Planet orbit and Mercury precession](https://www.zybuluo.com/lss9728/note/581493)
 - [x] [Exercise 10:Hyperion chaos](https://www.zybuluo.com/lss9728/note/589431)
 - [x] [Exercise 11:Electric potentials and Fields](https://www.zybuluo.com/lss9728/note/597789)
+- [x] [Exercise 12:wave](https://www.zybuluo.com/lss9728/note/604803)
